@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+ <html>
+ <head>
+ <!-- Copy this text (START) -->
+ <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.js"></script>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+ <link rel="stylesheet" href="https://www.weebly.com/editor/uploads/3/8/4/2/38422725/custom_themes/249868078281421378/files/CrosStrap/crosstrap.min.css">
+ <script src="https://www.weebly.com/editor/uploads/3/8/4/2/38422725/custom_themes/249868078281421378/files/CrosStrap/crosstrap.min.js"></script>
+ <!-- (END) -->
+ <title>CrosStrap examples</title>
+<style>
+/* Modal (START) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+	border-radius: 12px;
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.info { 
+    overflow-y: scroll;
+	overflow-x: no-content;
+}
+/* Modal (END) */
+</style>
+ </head>
+ <body>
+  <!-- Top Menu (START) -->
+ 	 <nav visible="true">
+	   <a href="#home">Home</a>
+	   <a href="#news">News</a>
+	   <a href="#contact">Contact</a>
+	   	  <drop>
+    	  		<button class="dropbtn">Dropdown 
+      				<i class="fa fa-caret-down"></i>
+    			</button>
+    		<div class="dd">
+      			 <a href="#">Link 1</a>
+      			 <a href="#">Link 2</a>
+      			 <a href="#">Link 3</a>
+    		</div>
+  		</drop> 
+	 </nav>
+  <!-- Top Menu (END) -->
+  
+  <!-- Text Examples (START) -->
+	 <div style="margin-top:55px;"></div>
+     <p>|<cap>Hello</cap>| again - A cap is a format where only the default cursor shows and not the text</p>
+     <p>Need <tip title="This is a help bubble">help</tip> or something - The underline text is a tip tag where the use of it is adding a title to it as a tip.</p>
+     <p>This is a <hl>highlighted</hl> text - A highlighted text is basically a highlighted text except it shows the default cursor only and you can't select it.</p>
+  <!-- Text Examples (END) -->
+     
+  <!-- Context Menu (START) -->
+	 <menu>
+  	 	 <li><a href="https://game-adventure.weebly.com" target="_blank">Website</a></li>
+		 <hr>
+		 <li id="button">Info</li>
+	 </menu>
+  <!-- Context Menu (END) -->
+	 
+  <!-- Just a Modal (START) -->
+	 <div id="modal" class="modal">
+  		 <div class="content">
+    	 	  <span class="close">&times;</span>
+    		  <h1>Info:</h1>
+			  <div class="info">
+			  	   <p><b>Context menu -</b> CrosStrap lets you have a custom context menu, you can only have one section of it<br>
+				   though because if you had more than 1 than it wouldn't really work right.</p>
+				   <p><b>Cap -</b> A cap shows only the default cursor on text and stuffs <cap>like this</cap></p>
+				   <p><b>tip -</b> You mainly just add a title to the tip tag and that's mainly it and it shows a question mark<br>
+				   cursor as well.</p>
+				   <p><b>HL/HighLight -</b> A highlight also known for hL but with a lowercase L which looks like a one for some<br>
+				   odd reason just highlights text <hl>like this</hl>.</p>
+				   <p><b>Blocks -</b> Blocks are stuffs you put content inside. They have attributes of shapes like eclipse-1 or 2<br> 
+				   and rect-1 or 2.</p>
+				   <p><b>Section -</b> A section is a section of a page that covers a chunk of the page.</p>
+				   <p><b>Footer -</b> A footer is basically a footer that will stay at the bottom of the page, the very bottom.</p>
+			  </div>
+  		 </div>
+	 </div>
+  <!-- Just a Modal (END) -->
+	 
+  <!-- Blocks/Content (START) -->
+     <h1 style="margin-bottom:-15px;">Blocks</h1>
+     <p>This block structure has 2 different shapes and that is rectangle and eclipse and it is basically a content box.</p>
+     <block select="false" shape="rect-1"><p>Block = Rectangle type 1 - it is basically a box and there are 2 types of 2 shapes and this one is a filled in black color with text center.</p></block>
+     <block shape="rect-2"><p>Block = Rectangle type 2 - It is like type 1 but it is in opposite colors.</p></block>
+     <block shape="eclipse-1"><p>Block = Eclipse type 1</p></block>
+     <block shape="eclipse-2"><p>Block = Eclipse type 2</p></block>
+  <!-- Blocks/Content (END) -->
+	 
+  <!-- Section (START) -->
+     <section>
+         <p>This is a section area for section stuffs.</p>
+     </section>
+  <!-- Section (END) -->
+	 
+	 <div style="margin-bottom:500px;"></div>
+
+<!-- Javascript for Modal (START) -->
+<script>
+var modal = document.getElementById('modal');
+
+var btn = document.getElementById("button");
+
+var span = document.getElementsByClassName("close")[0];
+ 
+btn.onclick = function() {
+    modal.style.display = "block";
+}
+
+span.onclick = function() {
+    modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+<!-- Javascript for Modal (END) -->
+
+  <!-- Footer (START) -->
+	 <footer>
+	 <p>Footer - Set a background color for yourself. Default background color is transparent.</p>
+	 </footer>
+  <!-- Footer (END) -->
+	 
+ </body>
+ </html>
