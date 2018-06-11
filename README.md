@@ -4,8 +4,8 @@ CrosStrap includes a custom context menu, tips, caps, highlights and more. How t
 
 ## Links:
 - [Official Website](https://game-adventure.weebly.com)
-- [Issues](/issues)
-- [Wiki](/wiki)
+- [Issues](https://github.com/GameAdventure/CrosStrap/issues)
+- [Wiki](https://github.com/GameAdventure/CrosStrap/wiki)
 
 ## Tutorials:
 The tutorials for CrosStrap is in the [wiki](https://github.com/GameAdventure/CrosStrap/wiki) page on github. It explains every element in CrosStrap. There will be more elements coming soon so stay toon for more elements.
