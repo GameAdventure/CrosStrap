@@ -1,6 +1,6 @@
 # CrosStrap
 CrosStrap is the new type of web plugin. This includes only an example of what it can do.
-CrosStrap includes a custom context menu, tips, caps, highlights and more. How to download it into your website is in the example in the source code.
+CrosStrap includes a custom context menu, tips, caps, highlights and more. How to download it into your website is in the example in the source code. CrosStrap is also going to be a very useful web add-on in the near future, it will include some major things to help developers.
 
 ## Links:
 - [Official Website](https://game-adventure.weebly.com)
